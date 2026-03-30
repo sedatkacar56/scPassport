@@ -25,7 +25,7 @@ jobs:
 
       - name: Install all R dependencies
         run: |
-          install.packages(c("rcmdcheck", "BiocManager"), repos = "https://cloud.r-project.org")
+          install.packages(c("rcmdcheck", "BiocManager", "rmarkdown", "knitr"), repos = "https://cloud.r-project.org")
           BiocManager::install(version = "devel", ask = FALSE, update = FALSE)
           BiocManager::install(c(
             "shiny", "miniUI", "Rcpp", "S4Vectors",
