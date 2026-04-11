@@ -1,6 +1,11 @@
 on:
   push:
     branches: [devel]
+    paths-ignore:
+      - 'paper.md'
+      - 'paper.bib'
+      - 'paper_figures/**'
+      - '.github/workflows/draft-pdf.yml'
   pull_request:
     branches: [devel]
 
